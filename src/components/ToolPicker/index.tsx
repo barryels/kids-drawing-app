@@ -11,11 +11,9 @@ export default function ToolPicker({ strokeWidth, onChangeStrokeWidth }: Props) 
   const [selectedStrokeWidth, setSelectedStrokeWidth] = useState<ToolAttributes["strokeWidth"]>(strokeWidth);
 
   const predefinedStrokeWidthOptions = [
-    { name: "xxxs", value: "2" },
-    { name: "dm", value: "10" },
-    { name: "md", value: "20" },
-    { name: "lg", value: "50" },
-    { name: "xxlg", value: "100" },
+    { name: "xxxs", value: "10" },
+    { name: "md", value: "50" },
+    { name: "xxlg", value: "80" },
   ];
 
   function onChange(e: ChangeEvent<HTMLInputElement>) {
@@ -25,6 +23,10 @@ export default function ToolPicker({ strokeWidth, onChangeStrokeWidth }: Props) 
   function onSelectPredefinedStrokeWidthOption(value: string) {
     setSelectedStrokeWidth(Number(value));
   }
+
+  useEffect(() => {
+    setSelectedStrokeWidth(Number(predefinedStrokeWidthOptions[1].value));
+  }, []);
 
   useEffect(() => {
     onChangeStrokeWidth(Number(selectedStrokeWidth));
@@ -43,7 +45,11 @@ export default function ToolPicker({ strokeWidth, onChangeStrokeWidth }: Props) 
             classList.push(`${classNameBase}--selected`);
           }
 
-          return <li key={predefinedStrokeWidthOption.name} className={classList.join(" ")} onClick={onSelectPredefinedStrokeWidthOption.bind(null, predefinedStrokeWidthOption.value)}></li>;
+          return (
+            <li key={predefinedStrokeWidthOption.name} className={classList.join(" ")} onClick={onSelectPredefinedStrokeWidthOption.bind(null, predefinedStrokeWidthOption.value)}>
+              <span className="ToolPicker_StrokeWidthOption__inner" style={{ height: `${predefinedStrokeWidthOption.value}px`, width: `${predefinedStrokeWidthOption.value}px` }}></span>
+            </li>
+          );
         })}
       </ul>
     </div>

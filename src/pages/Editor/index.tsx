@@ -15,7 +15,7 @@ export default function Editor() {
   const [isColourPickerBusy, setIsColourPickerBusy] = useState<boolean>(false);
   const [selectedToolType, setSelectedToolType] = useState<ToolType>(ToolType.PENCIL);
   const [selectedColour, setSelectedColour] = useState<ToolAttributes["colour"]>("#ff0000");
-  const [selectedStrokeWidth, setSelectedStrokeWidth] = useState<ToolAttributes["strokeWidth"]>(100);
+  const [selectedStrokeWidth, setSelectedStrokeWidth] = useState<ToolAttributes["strokeWidth"]>(0);
 
   useEffect(() => {
     setImage(getImage(imageID || ""));

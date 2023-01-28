@@ -1,8 +1,11 @@
 .ToolPicker {
-  border: 1px solid #00f;
+  background: #fff;
+  border-radius: 1.6rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  padding: 1.6rem;
 }
 .ToolPicker > input[type="range"] {
-  height: 3.2rem;
+  display: none;
 }
 
 .ToolPicker_StrokeWidthOptions {
@@ -10,32 +13,49 @@
   display: flex;
 }
 
-.ToolPicker_StrokeWidthOption {
-  border: 1px solid #000;
-  border-radius: 100%;
-  display: block;
-}
-.ToolPicker_StrokeWidthOption--selected {
-  background: #000;
+.ToolPicker_StrokeWidthOptions > * + * {
+  margin-left: 1.6rem;
 }
 
-.ToolPicker_StrokeWidthOption--xxxs {
+.ToolPicker_StrokeWidthOption {
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  display: flex;
+  height: 7.2rem;
+  justify-content: center;
+  transition: box-shadow ease-out 0.25s;
+  width: 7.2rem;
+}
+.ToolPicker_StrokeWidthOption__inner {
+  background: #000;
+  border-radius: 100%;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.ToolPicker_StrokeWidthOption--selected {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* .ToolPicker_StrokeWidthOption--xxxs .ToolPicker_StrokeWidthOption__inner {
   height: 1.6rem;
   width: 1.6rem;
 }
-.ToolPicker_StrokeWidthOption--dm {
+.ToolPicker_StrokeWidthOption--dm .ToolPicker_StrokeWidthOption__inner {
   height: 2.4rem;
   width: 2.4rem;
 }
-.ToolPicker_StrokeWidthOption--md {
+.ToolPicker_StrokeWidthOption--md .ToolPicker_StrokeWidthOption__inner {
   height: 3.2rem;
   width: 3.2rem;
 }
-.ToolPicker_StrokeWidthOption--lg {
+.ToolPicker_StrokeWidthOption--lg .ToolPicker_StrokeWidthOption__inner {
   height: 4rem;
   width: 4rem;
 }
-.ToolPicker_StrokeWidthOption--xxlg {
+.ToolPicker_StrokeWidthOption--xxlg .ToolPicker_StrokeWidthOption__inner {
   height: 4.8rem;
   width: 4.8rem;
-}
+} */
