@@ -42,7 +42,7 @@ export const state: State = {
     {
       id: "59bb6b53-19b1-48d8-bf3f-50eaceac47ea",
       name: "asdf",
-      src: "/images/peppa-pig-2.svg",
+      src: "/images/vecteezy_cute-little-monkey-outline-coloring-page-for-kids-animal_7908842.svg",
     },
     {
       id: "fca4e651-89ee-42f0-b5c0-856870220942",
