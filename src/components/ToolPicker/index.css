@@ -1,0 +1,41 @@
+.ToolPicker {
+  border: 1px solid #00f;
+}
+.ToolPicker > input[type="range"] {
+  height: 3.2rem;
+}
+
+.ToolPicker_StrokeWidthOptions {
+  align-items: center;
+  display: flex;
+}
+
+.ToolPicker_StrokeWidthOption {
+  border: 1px solid #000;
+  border-radius: 100%;
+  display: block;
+}
+.ToolPicker_StrokeWidthOption--selected {
+  background: #000;
+}
+
+.ToolPicker_StrokeWidthOption--xxxs {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.ToolPicker_StrokeWidthOption--dm {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.ToolPicker_StrokeWidthOption--md {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.ToolPicker_StrokeWidthOption--lg {
+  height: 4rem;
+  width: 4rem;
+}
+.ToolPicker_StrokeWidthOption--xxlg {
+  height: 4.8rem;
+  width: 4.8rem;
+}

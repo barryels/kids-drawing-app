@@ -8,11 +8,12 @@
 .BackButtonContainer,
 .ColourPickerContainer,
 .ToolPickerContainer,
-.ExtraDrawingControls {
+.ExtraDrawingControlsContainer {
   position: absolute;
 }
 
 .CanvasContainer {
+  background: #fff;
   height: 100%;
   left: 0;
   top: 0;
@@ -26,17 +27,18 @@
   z-index: 2;
 }
 .ColourPickerContainer {
-  bottom: 0;
-  right: 0;
+  bottom: 1.6rem;
+  right: 1.6rem;
   z-index: 3;
 }
 .ToolPickerContainer {
-  bottom: 0;
-  left: 0;
+  bottom: 1.6rem;
+  left: 1.6rem;
   z-index: 4;
 }
-.ExtraDrawingControls {
-  right: 0;
-  top: 0;
+.ExtraDrawingControlsContainer {
+  display: none;
+  right: 1.6rem;
+  top: 1.6rem;
   z-index: 5;
 }

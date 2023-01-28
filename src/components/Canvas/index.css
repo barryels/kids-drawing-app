@@ -7,7 +7,7 @@
   z-index: 1;
 }
 
-.container {
+.Canvas__Container {
   border: 1px solid #0f0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   height: 100%;
@@ -16,11 +16,34 @@
   width: 100%;
 }
 
-.drawingArea {
+.Canvas__DrawingArea {
   border: 1px solid #00f;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1;
+}
+
+.Canvas__ImageOverlay {
+  background: transparent no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Canvas__Cover {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }

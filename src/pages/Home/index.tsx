@@ -1,11 +1,11 @@
 import ImageList from "../../components/ImageList";
-import { images } from "../../store";
+import { state } from "../../store";
 import "./index.css";
 
 export default function Home() {
   return (
     <div className="Home">
-      <ImageList images={images} />
+      <ImageList images={state.images} />
     </div>
   );
 }

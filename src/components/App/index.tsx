@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/editor",
+    path: "/editor/:imageID",
     element: <Editor />,
   },
 ]);
