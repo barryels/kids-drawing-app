@@ -1,3 +1,42 @@
-#root {
-  font-size: 2.4rem;
+.Home {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.CanvasContainer,
+.BackButtonContainer,
+.ColourPickerContainer,
+.ToolPickerContainer,
+.ExtraDrawingControls {
+  position: absolute;
+}
+
+.CanvasContainer {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.BackButtonContainer {
+  left: 1.6rem;
+  top: 1.6rem;
+  z-index: 2;
+}
+.ColourPickerContainer {
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+.ToolPickerContainer {
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+.ExtraDrawingControls {
+  right: 0;
+  top: 0;
+  z-index: 5;
 }
