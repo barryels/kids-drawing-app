@@ -30,11 +30,6 @@ export const state: State = {
       src: "/images/peppa-pig-2.svg",
     },
     {
-      id: "a81392f0-66dd-4cf5-9e31-390284a3312f",
-      name: "asdf",
-      src: "/images/elephant-1.png",
-    },
-    {
       id: "7c1161c2-b9ad-488e-b66a-b18b0f2136be",
       name: "asdf",
       src: "/images/hatched_duck_icon_funny_black_white_cartoon_sketch_6847052.svg",
@@ -48,11 +43,6 @@ export const state: State = {
       id: "fca4e651-89ee-42f0-b5c0-856870220942",
       name: "asdf",
       src: "/images/hand-drawn-cat-outline-illustration.svg",
-    },
-    {
-      id: "d315b92c-76d0-4742-a066-b42e8ec189b5",
-      name: "asdf",
-      src: "/images/elephant-1.png",
     },
   ],
 };
