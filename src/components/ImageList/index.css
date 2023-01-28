@@ -1,0 +1,25 @@
+.ImageList {
+  --number-of-items-per-row: 4;
+  --item-width: calc(100vw / var(--number-of-items-per-row));
+}
+
+.ImageList__Items {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(var(--number-of-items-per-row), var(--item-width));
+}
+
+.ImageList__Item {
+  aspect-ratio: 16/9;
+  padding: 1.6rem;
+  width: var(--item-width);
+}
+
+.ImageList__ItemInner {
+  background: #fff no-repeat center center;
+  background-size: contain;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
