@@ -47,7 +47,7 @@ export const state: State = {
     {
       id: "fca4e651-89ee-42f0-b5c0-856870220942",
       name: "asdf",
-      src: "/images/elephant-1.png",
+      src: "/images/hand-drawn-cat-outline-illustration.svg",
     },
     {
       id: "d315b92c-76d0-4742-a066-b42e8ec189b5",
