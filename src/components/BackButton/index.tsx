@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 
 export default function BackButton() {
   return (
-    <a className="BackButton" href="/">
+    <Link className="BackButton" to="/">
       &lt;
-    </a>
+    </Link>
   );
 }
