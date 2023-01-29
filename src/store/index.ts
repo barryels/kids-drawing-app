@@ -27,7 +27,7 @@ export const state: State = {
     {
       id: "9c34c7d4-ec37-4df2-94b0-8ca0696dd504",
       name: "fish-1",
-      src: "/images/fish-1.svg",
+      src: "./images/fish-1.svg",
     },
   ],
 };
