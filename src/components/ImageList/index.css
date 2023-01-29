@@ -1,24 +1,31 @@
 .ImageList {
   --number-of-items-per-row: 4;
   --item-width: calc(100vw / var(--number-of-items-per-row));
+  --item-height: calc(100vw / 5);
+  overflow-y: auto;
 }
 
 .ImageList__Items {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(var(--number-of-items-per-row), var(--item-width));
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ImageList__Item {
-  aspect-ratio: 16/9;
+  height: var(--item-height);
   padding: 1.6rem;
   width: var(--item-width);
 }
 
 .ImageList__ItemInner {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.ImageList__ItemImage {
   background: #fff no-repeat center center;
   background-size: contain;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   display: block;
   height: 100%;
   width: 100%;

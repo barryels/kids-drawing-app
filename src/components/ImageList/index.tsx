@@ -13,8 +13,8 @@ export default function ImageList({ images }: Props) {
         {images.map((image) => {
           return (
             <li key={image.id} className="ImageList__Item">
-              <Link to={`/editor/${image.id}`}>
-                <span className="ImageList__ItemInner" style={{ backgroundImage: `url(${image.src})` }}></span>
+              <Link to={`/editor/${image.id}`} className="ImageList__ItemInner">
+                <span className="ImageList__ItemImage" style={{ backgroundImage: `url(${image.src})` }}></span>
               </Link>
             </li>
           );
