@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Image } from "../../store";
 import "./index.css";
 
@@ -12,9 +13,9 @@ export default function ImageList({ images }: Props) {
         {images.map((image) => {
           return (
             <li key={image.id} className="ImageList__Item">
-              <a href={`/editor/${image.id}`}>
+              <Link to={`/editor/${image.id}`}>
                 <span className="ImageList__ItemInner" style={{ backgroundImage: `url(${image.src})` }}></span>
-              </a>
+              </Link>
             </li>
           );
         })}
